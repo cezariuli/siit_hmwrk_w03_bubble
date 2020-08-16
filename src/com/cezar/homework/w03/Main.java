@@ -2,6 +2,18 @@ package com.cezar.homework.w03;
 
 import java.lang.Math;
 
+/**
+ * Using bubble sort algorithm to sort a list of sales persons based on their revenues.
+ *
+ * Create a number of instances of SalesRepresentative Class.
+ *
+ * Each instance represents a sales person.
+ * Create a list with those sales representatives.
+ *
+ * Print the list before and after sorting.
+ *
+ * @author Cezar Florea
+ */
 public class Main {
 
     public static SalesRepresentative salesGuy1 = new SalesRepresentative("salesGuy1");
@@ -32,8 +44,10 @@ public class Main {
     }
 
     /**
-     * create a method that is simulating the sales for each seller;
-     * @param salesGuy
+     * This method is simulating the sales for each seller.
+     * Each seller is assigned a random number of sales.
+     * Each sale has a random value.
+     * @param salesGuy - seller for whom to simulate the sales
      */
     public static void simulateSells (SalesRepresentative salesGuy) {
         int nrOfSales = (int) (Math.random() * 10);
@@ -44,6 +58,10 @@ public class Main {
         }
     }
 
+    /**
+     * Print on console the list of sellers
+     * @param sellerList - the list to be printed
+     */
     public static void listSellers(SalesRepresentative[] sellerList) {
 
         for (int i = 0; i < sellerList.length; i++) {
